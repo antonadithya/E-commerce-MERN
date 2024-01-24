@@ -11,17 +11,7 @@ const { ftruncate } = require("fs");
 
 app.use(express.urlencoded({ extended: true })); // 
 app.use(express.json());
-const allowedOrigins = ['https://e-commerce-mern-bnfq.onrender.com'];
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-}));
-
+app.use(cors());
 
 //Data base connection with mongoDB
 mongoose.connect("mongodb+srv://adithya:adithya2003@cluster0.ggo5tre.mongodb.net/test");
