@@ -9,9 +9,17 @@ const cors = require("cors");
 const { log } = require("console");
 const { ftruncate } = require("fs");
 
+
+const corsOptions = {
+  origin: 'https://e-commerce-mern-bnfq.onrender.com', // Update this with the actual origin of your client app
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+
 app.use(express.urlencoded({ extended: true })); // 
 app.use(express.json());
-app.use(cors());
+
+app.use(cors(corsOptions));
 
 //Data base connection with mongoDB
 mongoose.connect("mongodb+srv://adithya:adithya2003@cluster0.ggo5tre.mongodb.net/test");
