@@ -19,7 +19,7 @@ Our e-commerce website leverages the power of the MERN stack to provide a robust
 
 - Add to Cart Functionality: Users can conveniently add products to their cart and proceed to checkout with a streamlined process.
 
-Admin Panel: An admin dashboard allows administrators to manage products, orders, and customers efficiently.
+- Admin Panel: An admin dashboard allows administrators to manage products, orders, and customers efficiently.
 
 - Easy to Use: With a simple and intuitive design, our platform is easy for both customers and administrators to use, requiring minimal training.
 
